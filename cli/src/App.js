@@ -1,25 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+import { Menu } from './components/common';
+import { Page } from './components/page';
+import { Home } from './components/home';
+import { Form } from './components/form';
+import { Guests } from './components/guests';
+import { Invite } from './components/email-templates/Invite';
+import './App.css'
 
 function App() {
+
+  const title= "Charlie and Jack's Wedding";
+
+  useEffect(() => {
+    document.title = title;
+
+
+  }, [title]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <div style={{ display: 'flex', flexDirection: 'column', flexBasis: '100%' }}>
+          <Switch>
+            <Route exact path="/"><Home /></Route>
+            <Route exact path="/Success"><Home message="You're all done!"/></Route>
+            <Route path="/Form/:id" children={<Form />} />
+            <Route path="/Guests" children={<Guests />} />
+            <Route path="/Invite" children={<Invite />} />
+            <Route path="/:page" children={<Page />} />
+          </Switch>
+        </div>
+      </Router>
   );
 }
 

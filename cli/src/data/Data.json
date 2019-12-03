@@ -1,0 +1,100 @@
+{
+  "Schedule":
+  {
+    "image": "1",
+    "coverCard": {
+      "text": "The date of our wedding is Saturday 30th May 2020",
+      "color": "pink",
+      "textColor": "white"
+    },
+    "cards": [
+      {
+        "title": "Ceremony",
+        "icon": "running",
+        "text": "The ceremony starts at 2.00pm. Please be seated at 1.45pm"
+      },
+      {
+        "title": "Reception",
+        "icon": "cheers",
+        "text": "After the ceremony, there will be a drinks reception and garden games in the Manor House next door (hopefully outside - fingers crossed!)"
+      },
+      {
+        "title": "Dinner",
+        "icon": "utensils",
+        "text": "Dinner will take place in Tithe Barn at 4.30pm. Speeches will take place immediately afterwards"
+      }
+    ]
+  },
+  "Travel":
+  {
+    "image": "2",
+    "coverCard": {
+      "text": "We are getting married at Ufton Court, Ufton Nervet, Green Lane, Reading, RG7 4HD",
+      "color": "blue",
+      "textColor": "white"
+    },
+    "cards": [
+      {
+        "title": "Trains",
+        "icon": "train",
+        "text": "The nearest station is Theale. PUT NEW PARAGRAPH There are direct trains from London Paddington"
+      },
+      {
+        "title": "Taxi",
+        "icon": "taxi",
+        "text": "Theale station does not have a taxi rank. The venue is in the middle of nowhere. Make sure you pre-book one for each leg of your journey"
+      },
+      {
+        "title": "Driving",
+        "icon": "car",
+        "text": "Google Maps does a great job at directing you to the venue. There is parking on site - but you need to remove your car by 9am next morning if you are leaving it overnight"
+      }
+    ]
+  },
+  "FAQs":
+  {
+    "image": "3",
+    "coverCard": {
+      "text": "",
+      "color": "yellow",
+      "textColor": "darkblue"
+    },
+    "cards": [
+      {
+        "title": "Gifts",
+        "icon": "gift",
+        "text": "That’s very kind of you, but you don’t have to get us anything"
+      },
+      {
+        "title": "Dress code",
+        "icon": "dress",
+        "text": "Lounge suits - not too formal, but best avoid jeans and shorts!"
+      },
+      {
+        "title": "Phone signal",
+        "icon": "phone",
+        "text": "Unfortunately phone signal is dodgy at best at the venue"
+      },
+      {
+        "title": "Weather",
+        "icon": "weather",
+        "text": "The ceremony and dinner will all be inside. If it’s sunny - and we hope it is - you can feel to wander around during the reception drinks. Otherwise, we are pretty well set if the weather isn’t great"
+      },
+      {
+        "title": "Children",
+        "icon": "pram",
+        "text": "Unforunately we are unable to accommodate children at our wedding"
+      }
+    ]
+  },
+  "Contact":
+  {
+    "image": "4",
+    "coverCard": {
+      "text": "You can email as at charlieandjack11@gmail.com",
+      "color": "darkblue",
+      "textColor": "white"
+    },
+    "cards": []
+  }
+}
