@@ -45,13 +45,13 @@ const Guests = () => {
 
   return (
     <div style={styles.container}>
-      <div style={{ position: 'fixed', top: 0 }}>
-        <Header text={guests} />
-        <Menu selected={menuItem} onClick={(value) => setMenuItem(value)}/>
-      </div>
       <div style={styles.content}>
           <GuestCards page={menuItem} cards={actualGuests} onInvite={() => setRefresh(1)}/>
       </div>
+      <div style={{ position: 'fixed', top: 0 }}>
+        <Header text={guests} />
+        <Menu selected={menuItem} onClick={(value) => setMenuItem(value)}/>
+      </div>s
     </div>
   );
 }

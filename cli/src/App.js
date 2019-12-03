@@ -19,8 +19,6 @@ function App() {
 
   useEffect(() => {
     document.title = title;
-
-
   }, [title]);
 
   return (

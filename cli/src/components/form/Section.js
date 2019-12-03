@@ -3,9 +3,6 @@ import { Icon } from '../common';
 import { colors } from '../../styles';
 
 const Section = ({ up, down, both, children }) => {
-
-
-
   return (
     <div style={styles.content}>
       <div style={styles.children}>
@@ -31,6 +28,7 @@ const styles = {
     scrollSnapAlign: 'start',
     justifyContent: 'space-between',
     color: colors.darkblue,
+    border: '1px solid green',
     fontFamily: 'Bree Serif',
 
   },

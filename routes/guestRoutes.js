@@ -54,8 +54,9 @@ module.exports = (app) => {
       const email = allGuests[id].email;
       // Send them an email
       await mailer({
-        to: 'panoramical@gmail.com',
-        subject: 'Please come to our wedding',
+        email: email,
+        to: `${allGuests[id].firstname} ${allGuests[id].lastname}`,
+        subject: 'You are invited to Charlie and Jack\'s wedding!',
         html: require('../services/email-templates/Invite')({
           names: parseNames(Object.values(allGuests)),
           id: id
@@ -86,13 +87,15 @@ module.exports = (app) => {
       })
       if(form.filter(({ rsvp }) => rsvp === 1).length) {
         await mailer({
-          to: form[0].email,
+          name: `${form[0].firstname} ${form[0].lastname}`,
+          email: form[0].email,
           subject: 'You\'re going to Jack and Charlie\'s wedding!',
           html: require('../services/email-templates/Confirm')()
         });
       }
       await mailer({
-        to: 'panoramical@gmail.com',
+        to: 'Charlie and Jack',
+        email: 'charlieandjack11@gmail.com',
         subject: 'Someone has responded to our wedding invite',
         html: require('../services/email-templates/Update')(form)
       });

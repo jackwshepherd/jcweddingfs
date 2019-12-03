@@ -22,6 +22,11 @@
         "title": "Dinner",
         "icon": "utensils",
         "text": "Dinner will take place in Tithe Barn at 4.30pm. Speeches will take place immediately afterwards"
+      },
+      {
+        "title": "Home time",
+        "icon": "road",
+        "text": "Our wedding day will wrap up at 11.30pm."
       }
     ]
   },

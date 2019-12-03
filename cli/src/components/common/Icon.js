@@ -12,7 +12,8 @@ import {
   faSpinner,
   faEmptySet,
   faCheck,
-  faClock
+  faClock,
+  faRoad,
 } from '@fortawesome/pro-solid-svg-icons';
 import {
   faTrain,
@@ -173,6 +174,9 @@ const icons = {
   },
   clock: {
     icon: faClock
+  },
+  road: {
+    icon: faRoad
   }
 };
 

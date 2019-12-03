@@ -3,9 +3,10 @@ const keys = require('../config/keys');
 
 sendgrid.setApiKey(keys.sendGrid);
 
-module.exports = async ({ to, subject, html }) => {
+module.exports = async ({ email, name, subject, html }) => {
   const msg = {
-    to: 'Jack Shepherd <panoramical@gmail.com>',
+    to: sendFakeEmails ?
+      `${name} <${email}>` : 'Jack Shepherd <panoramical@gmail.com>',
     from: 'Charlie and Jack <charlieandjack11@gmail.com>',
     subject: subject,
     html: html
