@@ -53,7 +53,7 @@ const Form = () => {
     console.log(scrollPosition % contentHeight);
 
     // Handle boxes
-    if((scrollPosition % contentHeight <= 10) || !(contentHeight % scrollPosition)) {
+    if((scrollPosition % contentHeight <= 100) || !(contentHeight % scrollPosition)) {
       setDisplayArrows({
         up: scrollPosition >= contentHeight,
         down: scrollPosition === 0 || (canSubmit && (scrollPosition < (contentHeight * pageCount)))
@@ -70,29 +70,12 @@ const Form = () => {
 
   return (
     <div style={styles.container} className="webkitfix" ref={containerRef}>
-    <div style={{ ...styles.arrow, top: 20 }}>
-      {displayArrows.up ?
-        <Button onClick={() => containerRef.current.scrollTop = scrollPosition - contentHeight}>
-          <Icon type='up' size={40} />
-        </Button>
-        : null}
-    </div>
-
-    <div style={{ ...styles.arrow, bottom: 20 }}>
-      {displayArrows.down && form ?
-        <Button onClick={() => containerRef.current.scrollTop = scrollPosition + contentHeight}>
-          <Icon type='down' size={40} />
-        </Button>
-        : null}
-      {!form ? (
-        <Icon type='spinner' size={40} spin />
-      ) : null }
-    </div>
 
       <Section>
         <div style={styles.cats} />
         <p style={text.date}>30 May 2020</p>
         <p style={text.small}>Ufton Court, Green Ln, Ufton Nervet, Reading RG7 4HD</p>
+        <p style={{ marginTop: '5vh' }}><Icon type="down" size={40} /></p>
       </Section>
 
     {form ? (
@@ -154,13 +137,12 @@ const Form = () => {
       </Section>
     ) : null}
 
-    {canSubmit ? (
       <Section>
         <Icon type="cheers" size={50} />
         <p style={text.heading}>{submitStatus !== -1 ? 'All done?' : 'Loading...' }</p>
           <p>
             <Submit onClick={() => sendForm(form, setSubmitStatus)}
-              disabled={submitStatus === 'Loading'}>
+              disabled={!canSubmit || submitStatus === 'Loading'}>
               {submitStatus !== 'Loading' ? 'Submit' : <Icon type='spinner' spin size={20} />}
             </Submit>
           </p>
@@ -168,7 +150,6 @@ const Form = () => {
             <p>The form didn't load - try again or email us at <a href='mailto: charlieandjack11@gmail.com'>charlieandjack11@gmail.com</a></p>
             : null }
       </Section>
-    ) : false}
 
 
 
@@ -184,6 +165,7 @@ const styles = {
     backgroundColor: 'red',
     borderRadius: '30vh',
     marginBottom: '5vh',
+    marginTop: '5vh',
     background: `url(${catimage})`,
     backgroundPosition: 'center center',
     backgroundSize: '30vh 30vh',
@@ -192,9 +174,7 @@ const styles = {
   container: {
     flex: 1,
     width: '100vw',
-    height: '100vh',
     overflow: 'auto',
-    scrollSnapType: 'y mandatory',
   },
   footer: {
     position: 'absolute',
@@ -215,8 +195,6 @@ const styles = {
     justifyContent: 'center',
   },
   fields: {
-    maxHeight: '50vh',
-    overflowY: 'scroll'
   }
 }
 

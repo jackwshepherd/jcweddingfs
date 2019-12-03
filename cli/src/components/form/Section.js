@@ -6,11 +6,9 @@ import { colors } from '../../styles';
 
 const Section = ({ up, down, both, children }) => {
   return (
-    <div style={styles.content}>
-      <Div100vh style={styles.children}>
+      <div style={styles.children}>
         {children}
-      </Div100vh>
-    </div>
+      </div>
   );
 }
 
@@ -30,17 +28,19 @@ const styles = {
     scrollSnapAlign: 'start',
     justifyContent: 'space-between',
     color: colors.darkblue,
-    fontFamily: 'Bree Serif',
-
+    backgroundColor: 'yellow',
   },
   children: {
     display: '-ms-flexbox',
     display: 'flex',
-    height: '100vh',
+    minHeight: '50vh',
     minWidth: '100vw',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    fontFamily: 'Bree Serif',
+    textAlign: 'center',
+
   },
 };
 

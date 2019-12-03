@@ -51,7 +51,7 @@ const Guests = () => {
       <div style={{ position: 'fixed', top: 0 }}>
         <Header text={guests} />
         <Menu selected={menuItem} onClick={(value) => setMenuItem(value)}/>
-      </div>s
+      </div>
     </div>
   );
 }
