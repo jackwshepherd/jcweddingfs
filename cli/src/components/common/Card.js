@@ -4,6 +4,7 @@ import { Button } from './Button';
 import { Circle } from './';
 import { colors } from '../../styles';
 import { useCardSize, useResponsiveSize, useScreenWidth } from '../../hooks';
+import ReactHtmlParser from 'react-html-parser';
 
 /////
 const eachCardStatus = (cardCount, cardWidth, scrollPosition, screenWidth) => {
@@ -127,7 +128,7 @@ const CardContent = ({ type, title, children, icon, color, textColor }) => {
           <div style={styles.icon}>
             <Icon type={icon} size={useResponsiveSize(80)} />
           </div>
-          {children ? <Text background='light'>{children}</Text> : '' }
+          {children ? <Text background='light'>{ReactHtmlParser(children)}</Text> : '' }
         </div>
       </div>
     </div>

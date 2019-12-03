@@ -42,7 +42,7 @@
       {
         "title": "Trains",
         "icon": "train",
-        "text": "The nearest station is Theale. PUT NEW PARAGRAPH There are direct trains from London Paddington"
+        "text": "The nearest station is Theale.<br\/><br\/> There are direct trains from London Paddington"
       },
       {
         "title": "Taxi",
