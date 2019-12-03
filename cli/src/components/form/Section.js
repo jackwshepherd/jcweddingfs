@@ -28,7 +28,6 @@ const styles = {
     scrollSnapAlign: 'start',
     justifyContent: 'space-between',
     color: colors.darkblue,
-    border: '1px solid green',
     fontFamily: 'Bree Serif',
 
   },

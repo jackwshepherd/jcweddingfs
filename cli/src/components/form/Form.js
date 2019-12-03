@@ -195,6 +195,7 @@ const styles = {
     height: '100vh',
     overflow: 'auto',
     scrollSnapType: 'y mandatory',
+    webkitOverflowScrolling: 'touch'
   },
   footer: {
     position: 'absolute',
