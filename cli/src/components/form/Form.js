@@ -50,9 +50,10 @@ const Form = () => {
     }
 
     getGuests();
+    console.log(scrollPosition % contentHeight);
 
     // Handle boxes
-    if(!(scrollPosition % contentHeight) || !(contentHeight % scrollPosition)) {
+    if((scrollPosition % contentHeight <= 10) || !(contentHeight % scrollPosition)) {
       setDisplayArrows({
         up: scrollPosition >= contentHeight,
         down: scrollPosition === 0 || (canSubmit && (scrollPosition < (contentHeight * pageCount)))
@@ -66,7 +67,6 @@ const Form = () => {
   if(submitStatus === 1) {
     return <Redirect to='/Success' />
   }
-  console.log(form);
 
   return (
     <div style={styles.container} ref={containerRef}>
