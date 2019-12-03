@@ -69,7 +69,7 @@ const Form = () => {
   }
 
   return (
-    <div style={styles.container} ref={containerRef}>
+    <div style={styles.container} className="webkitfix" ref={containerRef}>
     <div style={{ ...styles.arrow, top: 20 }}>
       {displayArrows.up ?
         <Button onClick={() => containerRef.current.scrollTop = scrollPosition - contentHeight}>
@@ -195,7 +195,6 @@ const styles = {
     height: '100vh',
     overflow: 'auto',
     scrollSnapType: 'y mandatory',
-    webkitOverflowScrolling: 'touch'
   },
   footer: {
     position: 'absolute',

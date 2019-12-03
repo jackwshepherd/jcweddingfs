@@ -41,3 +41,7 @@ button:focus {
 button:active {
     transform: scale(1);
 }
+
+.webkitfix {
+  -webkit-overflow-scrolling: 'touch'
+}
