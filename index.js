@@ -11,7 +11,6 @@ const app = express();
 app.use(bodyParser.json());
 
 require('./routes/guestRoutes.js')(app);
-console.log('hurrah');
 
 if(process.env.NODE_ENV === 'production') {
   app.use(express.static('cli/build'));
