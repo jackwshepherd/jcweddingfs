@@ -1,13 +1,15 @@
 import React from 'react';
+import Div100vh from 'react-div-100vh'
 import { Icon } from '../common';
 import { colors } from '../../styles';
+
 
 const Section = ({ up, down, both, children }) => {
   return (
     <div style={styles.content}>
-      <div style={styles.children}>
+      <Div100vh style={styles.children}>
         {children}
-      </div>
+      </Div100vh>
     </div>
   );
 }
@@ -34,13 +36,11 @@ const styles = {
   children: {
     display: '-ms-flexbox',
     display: 'flex',
-    flex: 1,
-    minHeight: '100vh',
+    height: '100vh',
     minWidth: '100vw',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-
   },
 };
 
