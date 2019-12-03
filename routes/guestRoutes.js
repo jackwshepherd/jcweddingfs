@@ -59,7 +59,8 @@ module.exports = (app) => {
         subject: 'You are invited to Charlie and Jack\'s wedding!',
         html: require('../services/email-templates/Invite')({
           names: parseNames(Object.values(allGuests)),
-          id: id
+          id: id,
+          url: keys.redirectURL
         })
       });
 

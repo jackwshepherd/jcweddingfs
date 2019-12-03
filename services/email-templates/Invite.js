@@ -72,7 +72,7 @@ module.exports = (data) => {
                         <td align="center" valign="center" height="340" width="375" background="https://firebasestorage.googleapis.com/v0/b/charlie-and-jack-wedding.appspot.com/o/envelope.png?alt=media&token=bad77486-0692-4479-8627-df3bac2307d9"
                         style="padding: 0px 0px 0 0px 0; background-image: url('https://firebasestorage.googleapis.com/v0/b/charlie-and-jack-wedding.appspot.com/o/envelope.png?alt=media&token=bad77486-0692-4479-8627-df3bac2307d9');
                         background-size: 90% auto; height: 600; background-repeat: no-repeat; background-position: center; margin: 0; padding: 0 0 40px 0; font-family: Courier; font-size: 12px; width: 375px; min-width: 375px; background-size: 375px;">
-                            <p style="max-width: 140px; height: 70px; color: #000; max-height: 70px; overflow: hidden; margin-left: -10px;">
+                            <p style="max-width: 140px; height: 70px; color: #000; max-height: 70px; overflow: hidden; margin-left: -10px; vertical-align: middle">
                             ${data.names}
                             </p>
 
@@ -99,7 +99,7 @@ module.exports = (data) => {
                             <table border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td align="center" style="border-radius: 28px;" bgcolor="#75b6c9">
-                                        <a href="http://localhost:3000/Form/${data.id}" target="_blank" style="font-size: 18px; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; border-radius: 28px; background-color: #75b6c9; padding: 16px 28px; border: 1px solid #75b6c9; display: block;">RSVP</a>
+                                        <a href="${data.url}/Form/${data.id}" target="_blank" style="font-size: 18px; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; border-radius: 28px; background-color: #75b6c9; padding: 16px 28px; border: 1px solid #75b6c9; display: block;">RSVP</a>
                                     </td>
                                 </tr>
                             </table>
