@@ -50,13 +50,100 @@ module.exports = (data) => {
 
     /* ANDROID CENTER FIX */
     div[style*="margin: 16px 0;"] { margin: 0 !important; }
+
+    .titleText {
+      display: none;
+      font-size: 1px;
+      color: #fefefe;
+      line-height: 1px;
+      font-family: Open Sans, Helvetica, Arial, sans-serif;
+      max-height: 0px;
+      max-width: 0px;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    .titleTextColor {
+      color: #fefefe
+    }
+
+    .nameText {
+      max-width: 140px;
+      height: 70px;
+      color: #000;
+      max-height: 70px;
+      overflow: hidden;
+      margin-left: -10px;
+      vertical-align: middle
+    }
+
+    .logoDark {
+      display: none
+    }
+
+    .logoLight {
+      display: block
+    }
+
+    .envelopeBackground {
+      padding: 0px 0px 0 0px 0;
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/charlie-and-jack-wedding.appspot.com/o/envelope.png?alt=media&token=bad77486-0692-4479-8627-df3bac2307d9');
+      background-size: 90% auto;
+      height: 600;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0 0 40px 0;
+      font-family: Courier;
+      font-size: 12px;
+      width: 375px;
+      min-width: 375px;
+      background-size: 375px;
+    }
+
+
+    @media (prefers-color-scheme: dark ) {
+      .titleTextColor {
+        color: #ffffff
+      }
+      .nameText {
+        max-width: 140px;
+        height: 70px;
+        color: #000 !important;
+        max-height: 70px;
+        overflow: hidden;
+        margin-left: -10px;
+        vertical-align: middle
+      }
+      .logoLight {
+        display: none !important
+      }
+      .logoDark {
+        display: block !important
+      }
+      .envelopeBackground {
+        padding: 0px 0px 0 0px 0;
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/charlie-and-jack-wedding.appspot.com/o/envelope-dark.png?alt=media&token=39c745e3-1ebb-4004-a1e4-66e02cde3c12');
+        background-size: 90% auto;
+        height: 600;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        padding: 0 0 40px 0;
+        font-family: Courier;
+        font-size: 12px;
+        width: 375px;
+        min-width: 375px;
+        background-size: 375px;
+      }
+    }
     </style>
     </head>
     <body style="margin: 0 !important; padding: 0; !important background-color: #ffffff;" bgcolor="#ffffff">
 
     <!-- HIDDEN PREHEADER TEXT -->
-    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Open Sans, Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-      Your invitation to Charlie and Jack's wedding
+    <div class="titleText titleTextColor">
+      Your invitation to Charlie and Jack's wedding!
     </div>
 
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -69,18 +156,26 @@ module.exports = (data) => {
                 <![endif]-->
                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
-                        <td align="center" valign="center" height="340" width="375" background="https://firebasestorage.googleapis.com/v0/b/charlie-and-jack-wedding.appspot.com/o/envelope.png?alt=media&token=bad77486-0692-4479-8627-df3bac2307d9"
-                        style="padding: 0px 0px 0 0px 0; background-image: url('https://firebasestorage.googleapis.com/v0/b/charlie-and-jack-wedding.appspot.com/o/envelope.png?alt=media&token=bad77486-0692-4479-8627-df3bac2307d9');
-                        background-size: 90% auto; height: 600; background-repeat: no-repeat; background-position: center; margin: 0; padding: 0 0 40px 0; font-family: Courier; font-size: 12px; width: 375px; min-width: 375px; background-size: 375px;">
-                            <p style="max-width: 140px; height: 70px; color: #000; max-height: 70px; overflow: hidden; margin-left: -10px; vertical-align: middle">
+                        <td
+                          align="center"
+                          valign="center"
+                          height="340"
+                          width="375"
+                          class="envelopeBackground">
+                            <div class="nameText">
                             ${data.names}
-                            </p>
+                            </div>
 
                         </td>
                     </tr>
                     <tr>
                         <td align="center" valign="top" style="padding: 0; font-family: Open Sans, Helvetica, Arial, sans-serif;">
-                          <img src="https://firebasestorage.googleapis.com/v0/b/charlie-and-jack-wedding.appspot.com/o/charlie.png?alt=media&token=ca9b8d69-3ff1-4a94-8515-5d1b818a86e5" width="200" border="0" style="display: block;">
+                          <div class="logoLight">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/charlie-and-jack-wedding.appspot.com/o/charlie.png?alt=media&token=924e7d06-766b-44ee-a598-002e959ace5a" width="200" border="0" style="display: block;">
+                          </div>
+                          <div class="logoDark">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/charlie-and-jack-wedding.appspot.com/o/charlie-dark.png?alt=media&token=9a0f2424-74d9-4ce2-ba41-7524aedadf2c" width="200" border="0" style="display: block;">
+                          </div>
                         </td>
                     </tr>
 
@@ -91,6 +186,7 @@ module.exports = (data) => {
                           <p style="width: 375px; color: #132852; font-family: Georgia; font-size: 14px; margin-top: 60;">
                               We are getting married at Ufton Court, Green Lane, Ufton Nervet, Reading, RG7 4HD. We would love you to join us for our special day.
                             </p>
+                          <p style="width: 375px; color: #132852; font-family: Georgia; font-size: 14px; margin-top: 60;"><strong>Please respond by 29 February 2020</strong></p>
 
                         </td>
                     </tr>

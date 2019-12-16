@@ -17,6 +17,14 @@ const Form = () => {
   const [form, setForm] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(0);
 
+  // Sort form into something
+  const formArray = Object.values(form).sort((a, b) => {
+    console.log(a, b);
+    if(a.firstname > b.firstname) return -1;
+    if(a.firstname < b.firstname) return 1;
+    return 0;
+  })
+
   // -- Arrows
   const [displayArrows, setDisplayArrows] = useState({ up: false, down: true });
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -30,8 +38,8 @@ const Form = () => {
   // -- Get height of screen
   const contentHeight = useScreenHeight();
   // -- Handle validation RETURN TO THIS
-  const canCome = form ? !!(Object.values(form).find(({ rsvp }) => rsvp === 1)) : false;
-  const canSubmit = form ? !!(Object.values(form).every(({ rsvp }) => rsvp !== undefined)) : false;
+  const canCome = form ? !!formArray.find(({ rsvp }) => rsvp === 1) : false;
+  const canSubmit = form ? !!formArray.every(({ rsvp }) => rsvp !== undefined) : false;
 
   useEffect(() => {
     // Add event listener
@@ -50,7 +58,6 @@ const Form = () => {
     }
 
     getGuests();
-    console.log(scrollPosition % contentHeight);
 
     // Handle boxes
     if((scrollPosition % contentHeight <= 100) || !(contentHeight % scrollPosition)) {
@@ -83,7 +90,7 @@ const Form = () => {
         <Icon type="bells" size={50} />
         <p style={text.heading}>Can you come?</p>
         <div style={styles.fields}>
-          {Object.values(form).map(({ _id, firstname }) => (
+          {formArray.map(({ _id, firstname }) => (
             <div key={firstname}>
               <Field
                 label={firstname}
@@ -102,8 +109,8 @@ const Form = () => {
         <Icon type="utensils" size={50} />
         <p style={text.heading}>Any dietary requirements?</p>
         <div style={styles.fields}>
-          {Object.values(form).map(({ _id, firstname }) => {
-            if(form[_id].rsvp === 0) return false;
+          {formArray.map(({ _id, firstname }) => {
+            if(form[_id].rsvp !== 1) return false;
             return (
               <div key={firstname}>
                 <Field

@@ -147,7 +147,7 @@ const Text = ({ children, background, size }) => (
     style={{
       ...styles.content,
       color: background === 'light' ? colors.darkblue : colors.white,
-      fontSize: useResponsiveSize(12, 1.1),
+      fontSize: useResponsiveSize(13, 1.1),
       paddingLeft: useResponsiveSize(10, 1.4),
       paddingRight: useResponsiveSize(10, 1.4)
     }}>

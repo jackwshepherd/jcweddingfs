@@ -19,28 +19,17 @@ Section.defaultProps = {
 }
 
 const styles = {
-  content: {
-    display: '-ms-flexbox',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    textAlign: 'center',
-    scrollSnapAlign: 'start',
-    justifyContent: 'space-between',
-    color: colors.darkblue,
-    backgroundColor: 'yellow',
-  },
   children: {
     display: '-ms-flexbox',
     display: 'flex',
-    minHeight: '50vh',
     minWidth: '100vw',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily: 'Bree Serif',
     textAlign: 'center',
-
+    marginTop: 100,
+    marginBottom: 100
   },
 };
 
