@@ -24,9 +24,9 @@
         "text": "Dinner will take place in Tithe Barn at 4.30pm. Speeches will take place immediately afterwards"
       },
       {
-        "title": "Home time",
+        "title": "Carriages",
         "icon": "road",
-        "text": "Our wedding day will wrap up at 11.30pm."
+        "text": "Carriages at 11.30pm."
       }
     ]
   },
@@ -47,12 +47,17 @@
       {
         "title": "Taxi",
         "icon": "taxi",
-        "text": "Theale station does not have a taxi rank. The venue is in the middle of nowhere. Make sure you pre-book one for each leg of your journey"
+        "text": "Theale station does not have a taxi rank. The venue is in the middle of nowhere. Make sure you pre-book one for each leg of your journey - here is a list of <a target=\"_blank\" href=\"https://www.thomsonlocal.com/search/taxis/rg7-4hd\">some local suppliers</a>"
       },
       {
         "title": "Driving",
         "icon": "car",
         "text": "Google Maps does a great job at directing you to the venue. There is parking on site - but you need to remove your car by 9am next morning if you are leaving it overnight"
+      },
+      {
+        "title": "Accommodation",
+        "icon": "hotel",
+        "text": "There are a few options for places to stay. <a href=\"https://www.devere.co.uk/wokefield-estate/\" target=\"_blank\">De Vere Wokefield Estate</a> is approximately a 10min drive away. <a href=\"https://www.bestwestern.co.uk/hotels/best-western-calcot-hotel-83831\" target=\"_blank\">The Best Western</a> is a slightly cheaper alternative, also 10 minutes away."
       }
     ]
   },
@@ -68,7 +73,7 @@
       {
         "title": "Gifts",
         "icon": "gift",
-        "text": "No need to give us a gift - just come and have a nice time"
+        "text": "We look forward to celebrating our day with you - no gifts please"
       },
       {
         "title": "Dress code",

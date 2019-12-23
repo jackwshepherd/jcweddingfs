@@ -42,6 +42,15 @@ button:active {
     transform: scale(1);
 }
 
+a, a:visited {
+  font-weight: bold;
+  color: #0091FF;
+  text-decoration: none
+}
+
+a:hover {
+  color: #44D7B6
+}
 .webkitfix {
   -webkit-overflow-scrolling: 'touch'
 }

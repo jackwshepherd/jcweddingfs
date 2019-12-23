@@ -151,7 +151,7 @@ const Text = ({ children, background, size }) => (
       paddingLeft: useResponsiveSize(10, 1.4),
       paddingRight: useResponsiveSize(10, 1.4)
     }}>
-    {children}
+    <span>{children}</span>
   </div>
 );
 
