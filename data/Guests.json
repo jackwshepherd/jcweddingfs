@@ -135,7 +135,7 @@
         "id": "4605d9b680714f5d8ee3b2998763a462",
         "firstname": "Harry",
         "lastname": "Jones",
-        "email": ""
+        "email": "harrywjns@gmail.com"
     },
     "9126a6ce75144da689e435b0fdcfd8d6": {
         "id": "9126a6ce75144da689e435b0fdcfd8d6",
@@ -153,7 +153,7 @@
         "id": "ed4d0689893a46e48baabe7634c93c4d",
         "firstname": "Sam",
         "lastname": "Bell",
-        "email": ""
+        "email": "sambell97@gmail.com"
     },
     "2bb806606899496b956f816204ae0c53": {
         "id": "2bb806606899496b956f816204ae0c53",
@@ -567,19 +567,19 @@
         "id": "0ef30b583a9140cea7bd6a708e2eb2a5",
         "firstname": "Rosa",
         "lastname": "",
-        "email": ""
+        "email": "harrywjns@gmail.com"
     },
     "a8be19df66ed4d5895656f6baaf2b37a": {
         "id": "a8be19df66ed4d5895656f6baaf2b37a",
         "firstname": "Jodie",
         "lastname": "",
-        "email": ""
+        "email": "sambell97@gmail.com"
     },
     "8ac01c26b58c4938abe319c072c7bbc8": {
         "id": "8ac01c26b58c4938abe319c072c7bbc8",
         "firstname": "Cathy",
         "lastname": "Fox",
-        "email": ""
+        "email": "cathyfox01@aol.com"
     },
     "391b051c7aec4ca2a12d421169e89e6e": {
         "id": "391b051c7aec4ca2a12d421169e89e6e",
@@ -609,6 +609,6 @@
         "id": "61e6448ba6e047398b3a4914487d1afb",
         "firstname": "Hermione",
         "lastname": "Sanderson",
-        "email": ""
+        "email": "sandershermz@hotmail.com"
     }
 }
