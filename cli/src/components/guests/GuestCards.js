@@ -12,18 +12,18 @@ const pageColors = {
 }
 
 const months = {
-  1: 'January',
-  2: 'February',
-  3: 'March',
-  4: 'April',
-  5: 'May',
-  6: 'June',
-  7: 'July',
-  8: 'August',
-  9: 'September',
-  10: 'October',
-  11: 'November',
-  12: 'December'
+  0: 'January',
+  1: 'February',
+  2: 'March',
+  3: 'April',
+  4: 'May',
+  5: 'June',
+  6: 'July',
+  7: 'August',
+  8: 'September',
+  9: 'October',
+  10: 'November',
+  11: 'December'
 }
 
 const GuestCards = ({ page, cards, menuItem }) => {
@@ -89,6 +89,7 @@ const GuestCards = ({ page, cards, menuItem }) => {
 const Card = ({ page, name, dietary, song, _id, onInvite, invited = {}, dateSent, disabled, email, hasName }) => {
   const [submitState, setSubmitState] = useState();
   const date = new Date(dateSent);
+  console.log(date);
   return (
     <div style={style.card}>
       <div style={style.cardRow}>
@@ -121,7 +122,7 @@ const Card = ({ page, name, dietary, song, _id, onInvite, invited = {}, dateSent
             <div style={{ ...style.label, marginTop: 5 }}>
               <Icon type="clock" size={15} />
               <div style={style.labelName}>
-                {date.getDay()} {months[date.getDate()]} {date.getFullYear()}
+                {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
               </div>
             </div>
           ) : null }
