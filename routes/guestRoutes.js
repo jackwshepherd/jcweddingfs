@@ -95,7 +95,7 @@ module.exports = (app) => {
         });
       }
       await mailer({
-        to: 'Charlie and Jack',
+        name: 'Charlie and Jack',
         email: 'charlieandjack11@gmail.com',
         subject: 'Someone has responded to our wedding invite',
         html: require('../services/email-templates/Update')(form)
