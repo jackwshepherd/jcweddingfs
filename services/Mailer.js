@@ -5,7 +5,7 @@ sendgrid.setApiKey(keys.sendGrid);
 
 module.exports = async ({ email, name, subject, html }) => {
   const msg = {
-    to: keys.sendFakeEmails === true ?
+    to: keys.sendFakeEmails === "on" ?
        'Jack Shepherd <panoramical@gmail.com>' : `${name} <${email}>`,
     from: 'Charlie and Jack <charlieandjack11@gmail.com>',
     subject: subject,
