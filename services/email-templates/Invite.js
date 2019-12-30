@@ -189,13 +189,20 @@ module.exports = (data) => {
                           <p style="width: 375px; color: #132852; font-family: Georgia; font-size: 14px; margin-top: 60;"><strong>Please respond by 29 February 2020</strong></p>
 
                         </td>
-                    </tr>
+                      </tr>
+
+                      <tr>
+                      <td align="center">
+                      <p style="font-family: Georgia; font-size: 14px; color: #132852">For more details, <a href="https://charlieandjack.co.uk" style="text-decoration: none; font-weight: bold">visit our website at https://charlieandjack.co.uk</a></p>
+                      </tr>
+                      </td>
+
                     <tr>
                         <td align="center" style="padding: 25px 0 0 0;">
                             <table border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <td align="center" style="border-radius: 28px;" bgcolor="#75b6c9">
-                                        <a href="${data.url}/Form/${data.id}" target="_blank" style="font-size: 18px; font-family: Open Sans, Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; border-radius: 28px; background-color: #75b6c9; padding: 16px 28px; border: 1px solid #75b6c9; display: block;">RSVP</a>
+                                    <td align="center" style="border-radius: 28px;" bgcolor="#132852">
+                                        <a href="${data.url}/Form/${data.id}" target="_blank" style="font-size: 18px; font-family: Georgia; color: #ffffff; text-decoration: none; border-radius: 28px; background-color: #75b6c9; padding: 16px 28px; border: 1px solid #75b6c9; display: block;">RSVP</a>
                                     </td>
                                 </tr>
                             </table>
