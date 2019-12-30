@@ -55,7 +55,7 @@ module.exports = (app) => {
       // Send them an email
       await mailer({
         email: email,
-        to: `${allGuests[id].firstname} ${allGuests[id].lastname}`,
+        name: `${allGuests[id].firstname} ${allGuests[id].lastname}`,
         subject: 'You are invited to Charlie and Jack\'s wedding!',
         html: require('../services/email-templates/Invite')({
           names: parseNames(Object.values(allGuests)),

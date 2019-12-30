@@ -24,6 +24,11 @@
         "text": "Dinner will take place in Tithe Barn at 4.30pm. Speeches will take place immediately afterwards"
       },
       {
+        "title": "Evening",
+        "icon": "guitars",
+        "text": "Drinks and dancing"
+      },
+      {
         "title": "Carriages",
         "icon": "road",
         "text": "Carriages at 11.30pm."
