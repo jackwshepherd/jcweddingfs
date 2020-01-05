@@ -168,6 +168,18 @@ module.exports = (data) => {
 
                         </td>
                     </tr>
+
+                    <tr>
+                        <td align="center" style="padding: 25px 0 0 0;">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center" style="border-radius: 28px;" bgcolor="#132852">
+                                        <a href="${data.url}/Form/${data.id}" target="_blank" style="font-size: 18px; font-family: Georgia; color: #ffffff; text-decoration: none; border-radius: 28px; background-color: #75b6c9; padding: 16px 28px; border: 1px solid #75b6c9; display: block;">Click here to RSVP</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
                     <tr>
                         <td align="center" valign="top" style="padding: 0; font-family: Open Sans, Helvetica, Arial, sans-serif;">
                           <div class="logoLight">
@@ -197,17 +209,7 @@ module.exports = (data) => {
                       </tr>
                       </td>
 
-                    <tr>
-                        <td align="center" style="padding: 25px 0 0 0;">
-                            <table border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td align="center" style="border-radius: 28px;" bgcolor="#132852">
-                                        <a href="${data.url}/Form/${data.id}" target="_blank" style="font-size: 18px; font-family: Georgia; color: #ffffff; text-decoration: none; border-radius: 28px; background-color: #75b6c9; padding: 16px 28px; border: 1px solid #75b6c9; display: block;">Click here to RSVP</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
+
                 </table>
                 <!--[if (gte mso 9)|(IE)]>
                 </td>
