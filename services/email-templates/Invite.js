@@ -170,7 +170,7 @@ module.exports = (data) => {
                     </tr>
 
                     <tr>
-                        <td align="center" style="padding: 25px 0 0 0;">
+                        <td align="center" style="padding: 25px 0 25px 0;">
                             <table border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td align="center" style="border-radius: 28px;" bgcolor="#132852">
