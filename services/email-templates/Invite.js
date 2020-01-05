@@ -202,7 +202,7 @@ module.exports = (data) => {
                             <table border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td align="center" style="border-radius: 28px;" bgcolor="#132852">
-                                        <a href="${data.url}/Form/${data.id}" target="_blank" style="font-size: 18px; font-family: Georgia; color: #ffffff; text-decoration: none; border-radius: 28px; background-color: #75b6c9; padding: 16px 28px; border: 1px solid #75b6c9; display: block;">RSVP</a>
+                                        <a href="${data.url}/Form/${data.id}" target="_blank" style="font-size: 18px; font-family: Georgia; color: #ffffff; text-decoration: none; border-radius: 28px; background-color: #75b6c9; padding: 16px 28px; border: 1px solid #75b6c9; display: block;">Click here to RSVP</a>
                                     </td>
                                 </tr>
                             </table>
