@@ -15,11 +15,11 @@ import './App.css'
 
 function App() {
 
-  const title= "Charlie and Jack's Wedding";
+  const title = "Charlie and Jack's Wedding";
 
   useEffect(() => {
     document.title = title;
-  }, [title]);
+  }, []);
 
   return (
       <Router>
