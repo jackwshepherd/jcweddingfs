@@ -91,6 +91,7 @@ module.exports = (form) => {
                                 <p>
                                 <h1>${firstname} ${lastname}</h2>
                                 <h2>${rsvp ? '<span style="color: green">Can come</span>' : '<span style="color: red">Can\'t make it</span>'}</h2>
+                                ${song ? `<h2>Their song choice is <strong>${song}</strong></h2>` : null}
                                 </p>
                               `)).join("")}
 
