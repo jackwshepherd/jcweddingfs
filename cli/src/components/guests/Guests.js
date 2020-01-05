@@ -33,7 +33,11 @@ const Guests = () => {
       try {
         const theseGuests = await axios.get('/api/guests/');
         const data  = await theseGuests.data;
-        setGuests(Object.values(data));
+        setGuests(Object.values(data).sort((a, b) => {
+          if(a.lastname > b.lastname) return 1;
+          if(a.lastname < b.lastname) return -1;
+          return 0;
+        }));
       } catch(error) {
         console.log(error);
       }
