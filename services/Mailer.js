@@ -7,7 +7,7 @@ module.exports = async ({ email, name, subject, html }) => {
   const msg = {
     to: keys.sendFakeEmails === "on" ?
        'Jack Shepherd <panoramical@gmail.com>' : `${name} <${email}>`,
-    from: 'Charlie and Jack <no-reply@charlieandjack.co.uk>',
+    from: 'Charlie and Jack <charlieandjack@em36.charlieandjack.co.uk>',
     subject: subject,
     html: html
   };
