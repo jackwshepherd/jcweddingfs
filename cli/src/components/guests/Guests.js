@@ -19,7 +19,7 @@ const Guests = () => {
         case "Can't come":
           return guest.dateSent && guest.rsvp === false;
         case 'No reply':
-          return guest.dateSent && !guest.rsvp;
+          return guest.dateSent && guest.rsvp === undefined;
         case 'Not sent':
           return !guest.dateSent && !guest.rsvp;
         default:
